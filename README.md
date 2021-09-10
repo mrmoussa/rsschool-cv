@@ -1,2 +1,2 @@
 Test README.md
-https://github-username.github.io/rsschool-cv/cv
+https://mrmoussa.github.io/rsschool-cv/cv
