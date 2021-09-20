@@ -168,16 +168,26 @@
               <div class="container">
                       <h1 class="text-center">My Code Snippets</h1>        
                       <p class="text-center"><pre>
-                        public static UserRepository getInstance() throws SQLException {
-                            if (instance == null) {
-                                return new UserRepository();
-                            }
-                            return instance;
-                        }
-                    
-                        //    METHODS TO GET THE VALUES OF USERS
-                        public ObservableList<User> getAllLibrarians() throws SQLException {
-                            ResultSet result;
+                        var arr = new Array(30);
+var k;
+for(i = 0; i < arr.length; i++) {
+    k = Math.round(Math.random()*10);
+    arr[i] = k;
+}
+
+for(i = 0; i < arr.length; i++) {
+    let j;
+    let buf;
+    for(j = i + 1; j < arr.length; j++) {
+        if (arr[i] > arr[j]) {
+            buf = arr[i];
+            arr[i] = arr[j];
+            arr[j] = buf;
+        }
+    }
+}
+
+document.write(arr);
                       </pre></p>  
                       <div class="row">
                           <div class="col-md-4">
